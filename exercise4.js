@@ -18,15 +18,13 @@ input.focus();
 // -- Helper: commit the edit -- 
 function commitEdit() { 
 const newText = input.value.trim() || originalText; 
-
-item.textContent = newText;
-item.classList.remove('editing'); 
+    item.textContent = newText;
+    item.classList.remove('editing'); 
 } 
 // -- Helper: cancel the edit -- 
 function cancelEdit() { 
- 
-item.textContent = originalText;
-item.classList.remove('editing');
+    item.textContent = originalText;
+    item.classList.remove('editing');
 } 
 
 input.addEventListener('keydown', function(event) {
