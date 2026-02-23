@@ -7,13 +7,14 @@ accordion.addEventListener('click', function(event) {
   const trigger = event.target.closest('.accordion-trigger');
   
   if (!trigger) return;
+
   const item = trigger.closest('.accordion-item');
-  
   const allItems = accordion.querySelectorAll('.accordion-item');
-  allItems.forEach(item => {
+  
+  allItems.forEach(items => {
     
-      if(item !== trigger) {
-        item.classList.remove('open');
+      if(items !== item) {
+        items.classList.remove('open');
       }
   });
   
